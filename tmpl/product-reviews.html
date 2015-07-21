@@ -1,0 +1,40 @@
+<div class="panel">
+	<ul>
+		<h4>商品评论</h4> 
+		<!-- 评论 -->
+		<li ng-repeat="review in product.reviews">
+			<blockquote> 
+				<b>{{review.stars}} 星</b> 
+				{{review.body}}<br>  
+				<cite>—by: {{review.author}}</cite>  
+			</blockquote> 
+		</li>
+	</ul>
+	<!-- 评论 end-->
+	<!-- 增加评论表单 -->
+	<form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewForm.$valid&&reviewCtrl.addReview(product)" novalidate>
+      <!--  评论预览 -->
+      <blockquote>
+        <b>{{reviewCtrl.review.stars}} 星</b>
+			     {{reviewCtrl.review.body}}<br>
+        <cite class="clearfix">—by: {{reviewCtrl.review.author}}</cite>
+      </blockquote>
+      <!--  评论表单 -->
+      <h4>商品评论</h4>
+      <fieldset class="form-group">
+        <select ng-model="reviewCtrl.review.stars" class="form-control" ng-options="stars for stars in [5,4,3,2,1]" title="Stars" required>
+          <option value="">商品评论</option>
+        </select>
+      </fieldset>
+      <fieldset class="form-group">
+        <textarea ng-model="reviewCtrl.review.body" class="form-control" placeholder="写一个简短的商品评论" title="评论" required></textarea>
+      </fieldset>
+      <fieldset class="form-group">
+        <input ng-model="reviewCtrl.review.author" type="email" class="form-control" placeholder="写一个邮箱" title="邮箱" required/>
+      </fieldset>
+      <fieldset class="form-group">
+        <input  type="submit" class="btn btn-primary pull-right" value="提交评论" />
+      </fieldset>
+    </form>
+    <!-- 增加评论表单 end-->
+</div>

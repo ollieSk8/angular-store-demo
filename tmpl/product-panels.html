@@ -1,0 +1,17 @@
+<ul class="nav nav-pills">
+	<li ng-class="{ active:panel.isSelected(1)}">
+		<a href ng-click="panel.selectTab(1)">商品描述</a>
+	</li> 
+	<li ng-class="{ active:panel.isSelected(2)}">
+		<a href ng-click="panel.selectTab(2)">商品规格</a>
+	</li>
+	<li ng-class="{ active:panel.isSelected(3)}">
+		<a href ng-click="panel.selectTab(3)">商品评论</a>
+	</li>
+</ul>
+<!-- 商品描述 panel -->
+<product-description ng-show="panel.isSelected(1)"></product-description>
+<!-- 商品规格 panel -->
+<product-spec ng-show="panel.isSelected(2)"></product-spec>
+<!-- 商品评论 -->
+<product-reviews ng-show="panel.isSelected(3)"></product-reviews>

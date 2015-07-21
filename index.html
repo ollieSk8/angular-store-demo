@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="store">
+<head>
+	<meta charset="UTF-8">
+	<title>一个angular商店</title>
+</head>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/layout.css">
+
+<body ng-controller="StoreController as store">
+<header>
+      <h1 class="text-center">特制宝石</h1>
+      <h2 class="text-center">Angular商店</h2>
+</header>
+<!-- 商品列表-->
+<div class="list-group">
+	<!-- 单个商品 -->
+	<div ng-repeat="product in store.product | orderBy:'-price'" class="list-group-item">
+		<product-title></product-title>
+		<!-- 商品图片列表 -->
+		<product-gallery></product-gallery>
+		<!-- 商品描述、规格、评论 切换 -->
+		<product-panels></product-panels>
+		
+	</div>
+</div>
+
+<script type="text/javascript" src="js/angular-1.3.0.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/product.js"></script>
+</body>
+</html>

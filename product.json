@@ -1,0 +1,96 @@
+[
+    {
+        "name": "石青石'",
+        "description": "有些宝石都蕴含着的质量超出了它们的光泽,石青石是那些宝石之一。",
+        "shine": 8,
+        "price": 110.5,
+        "rarity": 7,
+        "color": "#CCC",
+        "faces": 14,
+        "images": [
+            "img/gem-01.gif",
+			"img/gem-02.gif",
+			"img/gem-03.gif"
+        ],
+        "reviews":[
+        	{
+        		"stars":5,
+        		"body":"非常好看",
+        		"author":"abcd_ollie@gmail.com"
+        	},
+        	{
+        		"stars":5,
+        		"body":"非常难看",
+        		"author":"abcd_miki@gmail.com"
+        	},
+        	{
+        		"stars":5,
+        		"body":"非常好看",
+        		"author":"abcd_tony@gmail.com"
+        	}
+        ]
+    },
+    {
+        "name": "血石",
+        "description": "血石的起源是未知的，因此它的价值低。它有非常高的光泽和12面。",
+        "shine": 9,
+        "price": 22.9,
+        "rarity": 6,
+        "color": "#EEE",
+        "faces": 12,
+        "images": [
+            "img/gem-04.gif",
+			"img/gem-05.gif",
+			"img/gem-06.gif"
+        ],
+        "reviews":[
+        	{
+        		"stars":5,
+        		"body":"非常好看",
+        		"author":"abcd_ollie@gmail.com"
+        	},
+        	{
+        		"stars":5,
+        		"body":"非常难看",
+        		"author":"abcd_miki@gmail.com"
+        	},
+        	{
+        		"stars":5,
+        		"body":"非常好看",
+        		"author":"abcd_tony@gmail.com"
+        	}
+        ]
+    },
+    {
+        "name": "锆石",
+        "description": "锆石是令人垂涎的宝石,它非常受追捧。为这个华丽而闪耀高无论你付出多少,你都会感到自豪。",
+        "shine": 70,
+        "price": 1100,
+        "rarity": 2,
+        "color": "#000",
+        "faces": 6,
+        "images": [
+            "img/gem-07.gif",
+			"img/gem-08.gif",
+			"img/gem-09.gif"
+        ],
+        "reviews":[
+        	{
+        		"stars":5,
+        		"body":"非常好看",
+        		"author":"abcd_ollie@gmail.com"
+        	},
+        	{
+        		"stars":5,
+        		"body":"非常难看",
+        		"author":"abcd_miki@gmail.com"
+        	},
+        	{
+        		"stars":5,
+        		"body":"非常好看",
+        		"author":"abcd_tony@gmail.com"
+        	}
+        ]
+    }
+]
+	
