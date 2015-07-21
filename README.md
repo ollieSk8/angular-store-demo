@@ -20,6 +20,7 @@ angularDemo  <br />
 ----product-reviews.html  <br/>
 ----product-spec.html  <br/>
 ----product-title.html  <br/>
-====================================
+
 线上demo地址：http://olliesk8.github.io/angular-store-demo
+
 ####author:ollieSk8
